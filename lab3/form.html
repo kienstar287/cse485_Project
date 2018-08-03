@@ -7,6 +7,8 @@
     <title>Page Title</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
     <script src="main.js"></script>
 </head>
 
@@ -36,40 +38,42 @@
     </div>
     <div class="content">
         <div class="c1">add</div>
-        <div class="c2">
+        <div class="c2" >
+            <form  id="register-form" action="https://phpoll.com/register/process" method="post" role="form">
             <div>
                 <h1>Đăng ký thành viên</h1>
             </div>
+           
             <div>
                 <div class="name">Tên dăng nhập(*)</div>
-                <input type="text">
+                <input type="text" name="username" id="username">
             </div>
             <div>
-                <div class="pass">Mật khẩu(*)</div>
-                <input type="text">
+                <div class="pass" >Mật khẩu(*)</div>
+                <input type="password" name="password" id="password">
             </div>
             <div>
                 <div class="pass">nhập lại mật khẩu(*)</div>
-                <input type="text">
+                <input  type="password" name="confirm-password" id="confirm-password">
             </div>
             <div>
                 <div class="pass">Họ tên(*)</div>
-                <input type="text">
+                <input type="text"  id="name">
             </div>
             <div>
-                <div class="pass">Ngày sinh(*)</div>
-                <input type="date">
+                <div class="pass" >Ngày sinh(*)</div>
+                <input type="date" id="date">
             </div>
             <div>
-                <div class="pass">DT(*)</div>
-                <input type="text">
+                <div class="pass" >DT(*)</div>
+                <input type="text" id="phone">
             </div>
             <div>
-                <div class="pass">E-mail(*)</div>
-                <input type="text">
+                <div class="pass" >E-mail(*)</div>
+                <input type="text" type="email" name="email" id="email">
             </div>
             <div>
-                    <div class="pass">Giới tính(*)</div>
+                    <div class="pass" >Giới tính(*)</div>
              
                     <input name="gioitinh" type="radio" value="Nam" />Nam
                     <input name="gioitinh" type="radio" value="Nữ" />Nữ
@@ -78,8 +82,9 @@
             </div>
             <div>
                 <button type="button">Làm mới </button>
-                <button type="button">Đăng ký </button>
+                <button type="submit" name="register-submit" id="register-submit">Đăng ký </button>
             </div>
+        </form>
         </div>
 
         <div class="c3">add</div>
